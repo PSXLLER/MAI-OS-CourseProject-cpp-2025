@@ -1,11 +1,15 @@
 📦 Курсовой проект: Исследование аллокаторов памяти  
 FreeList Allocator и Power-of-Two Allocator
 
-👤 Автор проекта
-![alt text](founder_druzhinin.png-2.png)
-Данил Дружинин  
+
+## 👤 Автор проекта
+
+![author photo](trash_png/founder_druzhinin.png-2.png)
+
+**Данил Дружинин**  
 Основатель «Аллокаторы» (2025)  
 C++ Developer
+
 
 🧠 Описание проекта
 Этот проект посвящён исследованию двух аллокаторов памяти:
@@ -22,7 +26,9 @@ C++ Developer
 • 📈 сравнительный анализ  
 
 
-📁 Структура проекта
+## 📁 Структура проекта
+
+```
 cp_var19/
 ├── graphs/
 │   ├── malloc_latency.png
@@ -44,17 +50,20 @@ cp_var19/
 │   └── gtest_allocators.cpp
 ├── CMakeLists.txt
 └── README.md
-
+```
 
 🧪 Тестирование
 Проект использует GoogleTest.
 
-▶️ Запуск тестов:
+## ▶️ Запуск тестов
+
+```bash
 mkdir build
 cd build
 cmake ..
 make -j4
 ./allocator_tests
+```
 
 
 🚀 Бенчмарк
@@ -74,30 +83,36 @@ make -j4
 • ❌ allocation failures  
 • ⚠️ free failures  
 
-▶️ Запуск:
+## ▶️ Запуск бенчмарка
+
+```bash
 cd build
 ./benchmark
+```
 
 
 📊 Графики анализа
 (файлы PNG находятся в папке graphs/)
 • malloc_latency.png
-![alt text](malloc_latency_us_horizontal.png)  
+![malloc latency horizontal](trash_png/malloc_latency_us_horizontal.png)
 • free_latency.png
-![alt text](free_latency_us_horizontal.png)  
+![free latency horizontal](trash_png/free_latency_us_horizontal.png)
 • internal_frag.png  
-![alt text](internal_frag_bytes_horizontal.png)
+![internal frag (bytes)](trash_png/internal_frag_bytes_horizontal.png)
 • external_frag.png  
-![alt text](external_frag_percent_horizontal.png)
+![external frag percent](trash_png/external_frag_percent_horizontal.png)
 • allocator_metrics_table.png  
-![alt text](allocator_metrics_table.png)
+![metrics table](trash/allocator_metrics_table.png)
 
 
-🛠 Сборка проекта
+## 🛠 Сборка проекта
+
+```bash
 mkdir build
 cd build
 cmake ..
 make -j4
+```
 
 
 🎯 Дополнительно
