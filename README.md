@@ -92,7 +92,7 @@ cd build
 
 
 📊 Графики анализа
-(файлы PNG находятся в папке graphs/)
+
 • malloc_latency.png
 ![malloc latency horizontal](trash_png/malloc_latency_us_horizontal.png)
 • free_latency.png
@@ -102,7 +102,7 @@ cd build
 • external_frag.png  
 ![external frag percent](trash_png/external_frag_percent_horizontal.png)
 • allocator_metrics_table.png  
-![metrics table](trash/allocator_metrics_table.png)
+![metrics table](trash_png/allocator_metrics_table.png)
 
 
 ## 🛠 Сборка проекта
